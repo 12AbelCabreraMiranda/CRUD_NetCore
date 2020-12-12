@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Autentication_crud.Models.UserSecurity>
+
+@{
+    ViewData["Title"] = "RegisteredUsers";
+}
+
+<h1 class="text-center text-info">Usuarios registrados en la Base de Datos</h1>
+<br />
+<br />
+<p>
+    <a asp-action="NewUser">Crear Nuevo</a>
+</p>
+<div>
+    @if (TempData["mensajeUpdate"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fase show" role="alert">
+            @TempData["mensajeUpdate"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>NOMBRE</th>
+            <th>APELLIDOS</th>
+            <th>USUARIO</th>
+            <th>CONTRASEÑA</th>
+            <th>FECHA REGISTRADO</th>
+            <th>ESTADO DEL USUARIO</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserSecurityId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserData.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserData.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserRegisteredDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserState)
+            </td>
+
+
+            <td>
+                <a asp-action="UsersUpdate" asp-route-id="@item.UserSecurityId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.UserSecurityId">Delete</a> |                
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
