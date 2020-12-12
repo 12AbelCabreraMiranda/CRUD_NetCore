@@ -163,5 +163,19 @@ namespace Autentication_crud.Controllers
                 throw new Exception(ex.Message);
             }
         }
+
+        //Método eliminar(Actualizar estado en cero) registro del usuario
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var deleteUser = _context.UserSecurity.Find(id);
+            deleteUser.UserState = 0;
+
+            _context.Update(deleteUser);
+            await _context.SaveChangesAsync();
+
+            TempData["mensajeDeleted"] = "Usuario eliminado.!";
+
+            return Redirect("/User/RegisteredUsers");
+        }
     }
 }
