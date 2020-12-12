@@ -70,7 +70,7 @@ namespace Autentication_crud.Controllers
                         _context.UserSecurity.Add(SeguridadUsuarios);
                         await _context.SaveChangesAsync();
 
-                        TempData["mensaje"] = "Usuario Registrado Exitosamente";
+                        TempData["mensajeRegistrado"] = "Usuario Registrado Exitosamente";
 
                         return RedirectToAction(nameof(RegisteredUsers));                                            
                     }
@@ -82,7 +82,7 @@ namespace Autentication_crud.Controllers
                 }
                 else
                 {
-                    TempData["mensaje"] = "El usuario ya existe.!";
+                    TempData["mensajeRegistradoExiste"] = "El usuario ya existe.!";
                     return View();
                     
                 }
@@ -147,6 +147,8 @@ namespace Autentication_crud.Controllers
                             _context.Update(seguridadUsuario);
                             await _context.SaveChangesAsync();
                             TempData["mensajeUpdate"] = "Datos actualizados del Usuario";
+
+                            return Redirect("/User/RegisteredUsers");
                         }
                     
                     }
@@ -155,8 +157,8 @@ namespace Autentication_crud.Controllers
                         TempData["mensajeUpdateExiste"] = "No puede utilizar este usuario, Ya existe.!";
                         return View();
                     }
-                }                
-                return Redirect("/User/RegisteredUsers");
+                }
+                return View();
             }
             catch (Exception ex)
             {

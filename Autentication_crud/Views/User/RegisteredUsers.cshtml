@@ -8,8 +8,19 @@
 <br />
 <br />
 <p>
-    <a asp-action="NewUser">Crear Nuevo</a>
+    <a asp-action="NewUser" class="btn btn-secondary">Crear Nuevo</a>
 </p>
+<div>
+    @if (TempData["mensajeRegistrado"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fase show" role="alert">
+            @TempData["mensajeRegistrado"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    }
+</div>
 <div>
     @if (TempData["mensajeUpdate"] != null)
     {
@@ -41,7 +52,7 @@
             <th>USUARIO</th>
             <th>CONTRASEÑA</th>
             <th>FECHA REGISTRADO</th>
-            <th>ESTADO DEL USUARIO</th>
+            <th>ESTADO USUARIO</th>
             <th></th>
         </tr>
     </thead>
@@ -73,8 +84,8 @@
 
 
             <td>
-                <a asp-action="UsersUpdate" asp-route-id="@item.UserSecurityId">Edit</a> |
-                <a asp-action="DeleteUser" asp-route-id="@item.UserSecurityId">Delete</a> |                
+                <a asp-action="UsersUpdate" class="btn btn-info" asp-route-id="@item.UserSecurityId">Editar</a> |
+                <a asp-action="DeleteUser" class="btn btn-danger" asp-route-id="@item.UserSecurityId">Eliminar</a>               
             </td>
         </tr>
         }
