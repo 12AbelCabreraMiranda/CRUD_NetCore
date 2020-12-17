@@ -1,0 +1,40 @@
+﻿@model Autentication_crud.ViewModels.LoginViewModels
+
+@{
+    ViewData["Title"] = "Login";
+}
+<br />
+<br />
+<h1 class="text-center">Login</h1>
+<br />
+<br />
+<div class="row">
+
+    <div class="col-md-4 col-center">
+
+        <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserPassword" class="control-label"></label>
+                <input asp-for="UserPassword" type="password" class="form-control" />
+                <span asp-validation-for="UserPassword" class="text-danger"></span>
+            </div>
+            <div>
+                @if (TempData["UserIncorrecto"] != null){
+                    <p class="text-danger">@TempData["UserIncorrecto"]</p>                    
+                }
+            </div>
+            <center>
+                <div class="form-group">
+                    <input type="submit" value="Iniciar Sesión" class="btn btn-primary" />
+                </div>
+            </center>
+
+        </form>
+    </div>
+</div>

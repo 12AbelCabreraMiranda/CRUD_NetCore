@@ -4,12 +4,14 @@
 }
 
 <h1 class="text-center text-primary">Registrar nuevos usuarios en el Sistema</h1>
+<hr style="background:white" />
 
-<div class="container-fluid">
-    <div class="row" style="margin-top:50px">
-        <div class="col-md-6">
-            <form asp-action="NewUser" method="post" enctype="multipart/form-data">
-                @*<div class="modal-body">*@
+<body style="background:#2e2d2d">
+    <div class="container-fluid" style="color:white">
+        <div class="row" style="margin-top:50px">
+            <div class="col-md-6">
+                <form asp-action="NewUser" method="post" enctype="multipart/form-data">
+                    @*<div class="modal-body">*@
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="row">
                         <div class="col-md-6">
@@ -50,30 +52,31 @@
                         </div>
                     </div>
 
-                @*</div>*@
-                <div>
-                    @if (TempData["mensajeRegistradoExiste"] != null)
-                    {
-                        <div class="alert alert-warning alert-dismissible fase show" role="alert">
-                            @TempData["mensajeRegistradoExiste"]
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    }
-                </div>
-                <div class="modal-footer">                    
-                    <a asp-action="RegisteredUsers" class="btn btn-secondary">Cancelar</a>
-                    <input type="submit" value="Guardar" class="btn btn-primary" />
-                </div>
+                    @*</div>*@
+                    <div>
+                        @if (TempData["mensajeRegistradoExiste"] != null)
+                        {
+                            <div class="alert alert-warning alert-dismissible fase show" role="alert">
+                                @TempData["mensajeRegistradoExiste"]
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <a asp-action="RegisteredUsers" class="btn btn-secondary">Cancelar</a>
+                        <input type="submit" value="Guardar" class="btn btn-primary" />
+                    </div>
 
-            </form>
-        </div>
-        <div class="col-md-6">
-            <img src="~/img/developerUser.png" height="450"/>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img src="~/img/developerUser.png" height="450" />
+            </div>
         </div>
     </div>
-</div>
+</body>
 
 @*Validación del lado del cliente*@
 @section Scripts{ 

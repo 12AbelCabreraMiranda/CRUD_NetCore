@@ -14,9 +14,7 @@ namespace Autentication_crud.Controllers
     {
         private readonly AutenticationContext _context;
         public UserController(AutenticationContext context) => _context = context;
-        
-       
-
+              
         //Consulta de datos de usuarios
         public async Task<ActionResult> RegisteredUsers()
         {            
@@ -166,6 +164,7 @@ namespace Autentication_crud.Controllers
             }
         }
 
+        
         //Método eliminar(Actualizar estado en cero) registro del usuario
         public async Task<IActionResult> DeleteUser(int id)
         {

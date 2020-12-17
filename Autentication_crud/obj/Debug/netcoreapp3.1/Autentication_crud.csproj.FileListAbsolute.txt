@@ -411,9 +411,10 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentica
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.csproj.CoreCompileInputs.cache
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\NewUser.cshtml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\RegisteredUsers.cshtml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\UsersUpdate.cshtml.g.cs
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.csproj.CoreCompileInputs.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
