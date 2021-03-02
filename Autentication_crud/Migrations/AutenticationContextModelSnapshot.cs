@@ -19,6 +19,21 @@ namespace Autentication_crud.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Autentication_crud.Models.NombreTest", b =>
+                {
+                    b.Property<int>("NombreTestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("NombreUserDataId")
+                        .HasColumnType("int");
+
+                    b.HasKey("NombreTestId");
+
+                    b.ToTable("NombreTest");
+                });
+
             modelBuilder.Entity("Autentication_crud.Models.UserData", b =>
                 {
                     b.Property<int>("UserDataId")

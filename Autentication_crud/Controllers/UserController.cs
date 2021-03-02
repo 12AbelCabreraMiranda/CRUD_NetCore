@@ -12,15 +12,44 @@ namespace Autentication_crud.Controllers
 {
     public class UserController : Controller
     {
+        //https://asp.mvc-tutorial.com/es/480/httpcontext/sessions/
+        //Inyeccion de dependencia
         private readonly AutenticationContext _context;
         public UserController(AutenticationContext context) => _context = context;
-              
-        //Consulta de datos de usuarios
-        public async Task<ActionResult> RegisteredUsers()
-        {            
-            //PERMITE MOSTRAR LOS DATOS DE LOS USUARIOS CON ESTADO=1 EN TABLA
-            var Usu = await _context.UserSecurity.Where(x => x.UserState == 1).Include(x => x.UserData).ToListAsync();
-            return View(Usu);
+                      
+        public async Task<ActionResult> RegisteredUsers(string searchUser, string fechaInicio, string fechaFin)
+        {                       
+            var startDate = fechaInicio;
+            var endDate = fechaFin;
+
+            DateTime dtStart = Convert.ToDateTime(startDate);
+            DateTime dtEndDate = Convert.ToDateTime(endDate).AddDays(1);
+
+            
+            var usuario = from u in _context.UserSecurity
+                              //where u.UserState == 1 && u.UserRegisteredDate >= dtStart && u.UserRegisteredDate < dtEndDate
+                          where u.UserState == 1
+                          select u;
+
+            //Search Date        
+            usuario = usuario.Where(s => s.UserRegisteredDate >= dtStart && s.UserRegisteredDate < dtEndDate);
+
+            //Search UserName
+            var usuarioUser = from u in _context.UserSecurity
+                              //where u.UserState == 1 && u.UserRegisteredDate >= dtStart && u.UserRegisteredDate < dtEndDate
+                          where u.UserState == 1
+                          select u;
+
+            //Search UserName
+            if (!String.IsNullOrEmpty(searchUser))
+            {
+                usuarioUser = usuarioUser.Where(s => s.UserName.Contains(searchUser));
+                return View(await usuarioUser.Include(d => d.UserData).ToListAsync());
+            }
+
+
+            //View Data 
+            return View(await usuario.Include(d => d.UserData).ToListAsync());            
         }
 
         public IActionResult NewUser()
@@ -140,7 +169,7 @@ namespace Autentication_crud.Controllers
                             datosUsuario.LastName = userViewModel.LastName;
                             seguridadUsuario.UserName = userViewModel.UserName;
                             seguridadUsuario.UserPassword = userViewModel.UserPassword;
-
+                             
                             _context.Update(datosUsuario);
                             _context.Update(seguridadUsuario);
                             await _context.SaveChangesAsync();

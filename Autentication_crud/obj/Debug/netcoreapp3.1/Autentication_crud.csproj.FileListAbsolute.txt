@@ -1,6 +1,5 @@
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Autentication_crud.exe
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Autentication_crud.deps.json
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Autentication_crud.runtimeconfig.json
@@ -23,8 +22,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentica
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -103,8 +100,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentica
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Http.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Localization.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\refs\Microsoft.Extensions.Logging.Configuration.dll
@@ -311,7 +306,6 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentica
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.csprojAssemblyReference.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.AssemblyInfoInputs.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.AssemblyInfo.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.RazorAssemblyInfo.cache
@@ -414,7 +408,14 @@ C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentica
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\NewUser.cshtml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\RegisteredUsers.cshtml.g.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\User\UsersUpdate.cshtml.g.cs
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.csproj.CoreCompileInputs.cache
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\Autentication_crud.csprojAssemblyReference.cache
+C:\Users\Abel\Documents\Visual Studio 2019\Projects\Autentication_crud\Autentication_crud\obj\Debug\netcoreapp3.1\scopedcss\bundle\Autentication_crud.styles.css

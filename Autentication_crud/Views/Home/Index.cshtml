@@ -1,8 +1,28 @@
-﻿@{
+﻿@model Autentication_crud.ViewModels.UserDataViewModels
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+
+<div class="col-md-6">
+    <form asp-action="Index" method="post" enctype="multipart/form-data">
+        @*<div class="modal-body">*@
+
+       
+        <select asp-for="UserDataId"
+                class="form-control"
+                asp-items="@(new SelectList(@ViewBag.mostrar,"UserDataId","Name"))">
+        </select>
+       
+        <div class="modal-footer">            
+            <input type="submit" value="Guardar" class="btn btn-primary" />
+        </div>
+
+    </form>
 </div>

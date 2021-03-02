@@ -28,8 +28,8 @@ namespace Autentication_crud.Controllers
                     .FirstOrDefault();
 
                 if (userAut != null)
-                {                    
-                    //Session["User"] = $"{userAut.UserName}";
+                {
+                    
                     return Redirect("/User/RegisteredUsers");
                 }
                 else {

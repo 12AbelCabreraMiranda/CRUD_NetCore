@@ -3,10 +3,23 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Autentication_crud.Migrations
 {
-    public partial class myModels : Migration
+    public partial class models_adds : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "NombreTest",
+                columns: table => new
+                {
+                    NombreTestId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NombreUserDataId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NombreTest", x => x.NombreTestId);
+                });
+
             migrationBuilder.CreateTable(
                 name: "UserData",
                 columns: table => new
@@ -52,6 +65,9 @@ namespace Autentication_crud.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "NombreTest");
+
             migrationBuilder.DropTable(
                 name: "UserSecurity");
 

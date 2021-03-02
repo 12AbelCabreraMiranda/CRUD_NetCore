@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Autentication_crud.Migrations
 {
     [DbContext(typeof(AutenticationContext))]
-    [Migration("20201127064436_myModels")]
-    partial class myModels
+    [Migration("20210226055240_models_adds")]
+    partial class models_adds
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,21 @@ namespace Autentication_crud.Migrations
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("Autentication_crud.Models.NombreTest", b =>
+                {
+                    b.Property<int>("NombreTestId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("NombreUserDataId")
+                        .HasColumnType("int");
+
+                    b.HasKey("NombreTestId");
+
+                    b.ToTable("NombreTest");
+                });
 
             modelBuilder.Entity("Autentication_crud.Models.UserData", b =>
                 {
