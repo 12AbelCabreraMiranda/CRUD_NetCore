@@ -25,18 +25,21 @@ namespace Autentication_crud.Controllers
             DateTime dtStart = Convert.ToDateTime(startDate);
             DateTime dtEndDate = Convert.ToDateTime(endDate).AddDays(1);
 
-            
-            var usuario = from u in _context.UserSecurity
-                              //where u.UserState == 1 && u.UserRegisteredDate >= dtStart && u.UserRegisteredDate < dtEndDate
+            //Search Date  
+            var usuario = from u in _context.UserSecurity                          
                           where u.UserState == 1
                           select u;
 
-            //Search Date        
-            usuario = usuario.Where(s => s.UserRegisteredDate >= dtStart && s.UserRegisteredDate < dtEndDate);
+            //Search Date  
+            if(!String.IsNullOrEmpty(fechaInicio) && !String.IsNullOrEmpty(fechaFin))
+            {
+                usuario = usuario.Where(s => s.UserRegisteredDate >= dtStart && s.UserRegisteredDate < dtEndDate);
+                return View(await usuario.Include(d => d.UserData).ToListAsync());
+            }
+
 
             //Search UserName
-            var usuarioUser = from u in _context.UserSecurity
-                              //where u.UserState == 1 && u.UserRegisteredDate >= dtStart && u.UserRegisteredDate < dtEndDate
+            var usuarioUser = from u in _context.UserSecurity                              
                           where u.UserState == 1
                           select u;
 
@@ -49,7 +52,7 @@ namespace Autentication_crud.Controllers
 
 
             //View Data 
-            return View(await usuario.Include(d => d.UserData).ToListAsync());            
+            return View(await usuarioUser.Include(d => d.UserData).ToListAsync());            
         }
 
         public IActionResult NewUser()
